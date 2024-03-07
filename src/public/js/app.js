@@ -31,15 +31,14 @@ function handleSubmit(event) {
     event.preventDefault();
     const input = messageForm.querySelector("input");
     socket.send(input.value);
-    // console.log(input.value);
     input.value = "";
 }
 function handleNickSubmit(event) {
     event.preventDefault();
-    const input = messageForm.querySelector("input");
+    const input = nickNameForm.querySelector("input");
     socket.send(input.value);
     // console.log(input.value);
     input.value = "";
 }
 messageForm.addEventListener("submit", handleSubmit);
-nickNameForm.addEventListener("submit", handleNickSubmit)
+nickNameForm.addEventListener("submit", handleNickSubmit);
