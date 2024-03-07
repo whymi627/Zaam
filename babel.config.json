@@ -1,0 +1,5 @@
+// 자바스크립트 컴파일러
+{
+    "presets": ["@babel/preset-env"]
+}
+
