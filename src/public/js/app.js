@@ -1,3 +1,5 @@
+//front-end
+
 const socket = io();
 
 const welcom = document.getElementById("welcome");
@@ -8,6 +10,7 @@ function handleRoomSubmit(event){
     const input = form.querySelector("input");
     socket.emit("enter_room", { payload: input.value}, () =>{
         console.log("Server is done!");
+
     }
     );
     input.value ="";
